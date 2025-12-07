@@ -40,3 +40,45 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Controle de elementos CSS da div */
+.header{
+  background-color: #ffffffe3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 2vh;
+}
+
+.nav-bar{
+  margin: 0 auto;
+}
+
+/* Controle de elementos CSS da lista (ul/li) */
+.list-nav{
+  list-style: none;
+  display: flex;
+}
+
+.list-nav .item{
+  padding-left: 5vh;
+
+  /*Textos e fontes*/
+  font-size: 13pt;
+  color: rgb(0, 0, 0);
+}
+
+.button{
+  background-color: rgba(0, 0, 0, 0.815);
+
+  padding: 6pt;
+  margin-left: 10pt;
+  border-radius: 5pt;
+  list-style: none;
+
+  /*Textos e fontes*/
+  font-size: 12pt;
+  color: #ffffff;
+}
