@@ -25,7 +25,18 @@ function NavBar() {
 function Title() {
   return (
     <div className="Title">
-      <h1>TESTE</h1>
+      <h1>TESTE PARA COMMIT</h1>
+    </div>
+  );
+}
+
+function Carriagem(){
+  return(
+    <div>
+      <Image></Image>
+      <Image></Image>
+      <Image></Image>
+      <Image></Image>
     </div>
   );
 }
@@ -35,8 +46,7 @@ export default function Home() {
     <>
       <NavBar/>
       <Title/>
+      <Carriagem/>
     </>
   );
 }
-
-
