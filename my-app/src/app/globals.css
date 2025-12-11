@@ -93,9 +93,9 @@ a {
 .blur{
   display: flex;
   position: absolute;
-  justify-content: center; /* Alinha horizontalmente */
-  align-items: center;     /* Alinha verticalmente */
-  height: 100%;           /* Define a altura do contêiner para 100% da viewport */
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;           
   width: 100%; 
   z-index: 5;
   backdrop-filter: blur(3px);
