@@ -82,3 +82,71 @@ a {
   font-size: 12pt;
   color: #ffffff;
 }
+
+
+.Title{
+  display: flex;
+  justify-content: center;
+  padding: 20vw;
+}
+
+.blur{
+  display: flex;
+  position: absolute;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center;     /* Alinha verticalmente */
+  height: 100%;           /* Define a altura do contêiner para 100% da viewport */
+  width: 100%; 
+  z-index: 5;
+  backdrop-filter: blur(3px);
+}
+
+.popUp{
+  position: sticky;
+  background: whitesmoke;
+  width: 50vw;
+  height: 60vh;  
+  z-index: 10;
+  border-radius: 20px;
+  text-align: center;
+  color:black
+}
+
+.topModal{
+  display: flex;
+  padding: 10pt;
+  
+}
+
+.topModal p{
+  margin: auto;
+  font-size: 12pt;
+  color: rgba(36, 36, 36, 0.808);
+}
+
+.circle{
+  color: white;
+  margin-right: 3pt;
+  border-radius: 50%;
+  
+  width: 17px; /* Largura igual à altura */
+  height: 17px; /* Altura igual à largura */
+}
+
+.circle button{
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+.closeButton{
+  background-color: rgba(255, 0, 0, 0.863);
+}
+
+.minButton{
+  background-color: rgba(255, 255, 0, 0.592);
+}
+
+.maxButton{
+  background-color: rgba(0, 128, 0, 0.493);
+}

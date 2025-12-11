@@ -1,3 +1,7 @@
+'use client'
+
+import React, { useState } from 'react';
+
 function NavBar() {
   return (
     <div className="header">
@@ -14,6 +18,7 @@ function NavBar() {
       <div className="button">
         <a href="#">Login</a>
       </div>
+
       <div className="button">
         <a href="#">Create</a>
       </div>
@@ -22,10 +27,35 @@ function NavBar() {
   );
 }
 
+function PopUp(){
+  const [mostrarModal, setMostrarModal] = useState(true);
+
+  const fecharModal = () => {
+    setMostrarModal(false);
+  };
+
+  if (!mostrarModal) {
+    return null;
+  }
+
+  return( 
+    <div className="blur">
+      <div className="popUp">
+        <div className="topModal">
+          <div className="circle"><button className="closeButton" onClick={fecharModal}></button></div>
+          <div className="circle"><button className="minButton"></button></div>
+          <div className="circle"><button className="maxButton"></button></div>
+          <p>Atenção</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Title() {
   return (
     <div className="Title">
-      <h1>TESTE PARA COMMIT</h1>
+      <h1>SEJA BEM VINDO</h1>
     </div>
   );
 }
@@ -33,10 +63,10 @@ function Title() {
 function Carriagem(){
   return(
     <div>
-      <Image></Image>
-      <Image></Image>
-      <Image></Image>
-      <Image></Image>
+      <img></img>
+      <img></img>
+      <img></img>
+      <img></img>
     </div>
   );
 }
@@ -44,6 +74,7 @@ function Carriagem(){
 export default function Home() {
   return (
     <>
+      <PopUp/>
       <NavBar/>
       <Title/>
       <Carriagem/>
