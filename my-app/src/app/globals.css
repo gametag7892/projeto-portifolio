@@ -42,29 +42,52 @@ a {
 }
 
 /* Controle de elementos CSS da div */
+.main{
+  display: flex;
+}
+.board{
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar{
+  padding: 10pt;
+  width: 96vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.myNick{
+  padding: 10pt;
+}
+
+.top-left{
+  display: flex;
+  justify-self: flex-end;
+}
+
+
+.top-right{
+  display: flex;
+}
+
 .header{
   background-color: #ffffffe3;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-right: 2vh;
-}
-
-.nav-bar{
-  margin: 0 auto;
+  flex-direction: column;
+  width: 4vw;
+  height: 100vh;  
 }
 
 /* Controle de elementos CSS da lista (ul/li) */
 .list-nav{
   list-style: none;
-  display: flex;
 }
 
 .list-nav .item{
-  padding-left: 5vh;
-
+  display: none;
+  padding-bottom: 20pt;
+  text-align: center;
   /*Textos e fontes*/
   font-size: 13pt;
   color: rgb(0, 0, 0);
@@ -73,8 +96,8 @@ a {
 .button{
   background-color: rgba(0, 0, 0, 0.815);
 
-  padding: 6pt;
-  margin-left: 10pt;
+  padding: 5pt;
+  margin: 5pt;
   border-radius: 5pt;
   list-style: none;
 
@@ -83,11 +106,34 @@ a {
   color: #ffffff;
 }
 
+.central{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+}
 
 .Title{
-  display: flex;
-  justify-content: center;
-  padding: 20vw;
+  text-align: center;
+  padding-bottom: 10pt;
+}
+
+.Subtitle{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.inputBox{
+  text-align: center;
+}
+
+.input{
+  width: 40vw;
+  height: 4vh;
+  border-radius: 10pt;
+  text-align: center;
+  font-size: 15pt;
 }
 
 .blur{
@@ -115,7 +161,6 @@ a {
 .topModal{
   display: flex;
   padding: 10pt;
-  
 }
 
 .topModal p{
@@ -150,3 +195,4 @@ a {
 .maxButton{
   background-color: rgba(0, 128, 0, 0.493);
 }
+
