@@ -17,8 +17,7 @@ function NavBar() {
   );
 }
 
-
-
+/*
 function PopUp(){
   const [mostrarModal, setMostrarModal] = useState(true);
 
@@ -43,6 +42,7 @@ function PopUp(){
     </div>
   );
 }
+*/
 
 function Title() {
   return (
@@ -79,7 +79,6 @@ function Top(){
     </div>
   );
 }
-
 
 export default function Home() {
   return (
