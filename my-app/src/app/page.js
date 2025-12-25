@@ -1,10 +1,23 @@
 'use client'
 
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+/* import all the icons in Free Solid, Free Regular, and Brands styles */
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas, far, fab)
 
 function NavBar() {
-  return (
+  return ( 
     <div className="header">
+      <div className='icons'>
+        <FontAwesomeIcon icon="fa-solid fa-bars" className="menuBar"/>
+      </div>
+      
       <div className="nav-bar">
         <ul className="list-nav">
           <li className="item"><a href="#">Inicio</a></li>
@@ -47,6 +60,7 @@ function PopUp(){
 function Title() {
   return (
     <div className="Title">
+      
       <h2>Seja bem vindo ao meu ✨Projeto✨</h2>
     </div>
   );
@@ -63,6 +77,7 @@ function Subtitle(){
 function Top(){
   return(
     <div className="topbar">
+      
       <div className="top-left">
         <h3 className="myNick"><a href="https://github.com/gametag7892">GameTag7892</a></h3>
       </div>

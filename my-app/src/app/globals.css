@@ -75,7 +75,7 @@ a {
   background-color: #ffffffe3;
   display: flex;
   flex-direction: column;
-  width: 4vw;
+  width: 3vw;
   height: 100vh;  
 }
 
@@ -130,8 +130,8 @@ a {
 
 .input{
   width: 40vw;
-  height: 4vh;
-  border-radius: 10pt;
+  height: 4.5vh;
+  border-radius: 5pt;
   text-align: center;
   font-size: 15pt;
 }
@@ -196,3 +196,15 @@ a {
   background-color: rgba(0, 128, 0, 0.493);
 }
 
+.icons{
+  padding-top: 10pt;
+  justify-self: center;
+  align-self: center;
+  box-shadow: none;
+}
+
+.menuBar{
+  color: #0a0a0a;
+  width: 20pt;
+  height: 20pt;
+}
